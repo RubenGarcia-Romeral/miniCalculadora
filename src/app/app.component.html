@@ -1,0 +1,14 @@
+<div style="background-color: aqua; margin-top: 10px; padding: 10px; width: 30%; margin: auto; margin-top: 10px; border-radius: 5px; border: 1px solid black;">
+    <div class="row">
+        <div style="text-align: center;">
+            <input type="number" [(ngModel)]="num1" placeholder="Número 1"><br>
+            <input type="number" [(ngModel)]="num2" placeholder="Número 2"><br>
+            <input type="number" value="{{ res }}" placeholder="Resultado" disabled>
+        </div>
+
+        <div style="margin: auto; text-align: center; margin-top: 10px;">
+            <button style="border-radius: 4px; border-style: none; border: 1px solid black; margin-right: 5px;" (click)="suma()">Suma</button>
+            <button style="border-radius: 4px; border-style: none; border: 1px solid black;"  (click)="resta()">Resta</button>
+        </div>
+    </div>
+</div>
